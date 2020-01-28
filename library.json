@@ -1,0 +1,28 @@
+{
+  "name": "TP4054",
+  "keywords": "chrg, tp4054, battery, lipo, charger",
+  "description": "Arduino Library for TP4054 Standalone Linear Li-lon Battery Charger. TP4054 !CHRG-pin needs to be connected to one input pin and one output pin via 2K resistor as described in datasheet.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/JelmerT/TP4054.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Jelmer Tiete",
+      "email": "jelmer@tiete.be",
+      "url": "http://jelmertiete.com",
+      "maintainer": true
+    }
+  ],
+  "dependencies":
+  {
+    "name": "OneWire",
+    "authors": "Paul Stoffregen",
+    "frameworks": "arduino"
+  },
+  "version": "0.0.1",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
