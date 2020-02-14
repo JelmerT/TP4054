@@ -72,9 +72,9 @@ chargeStatus_t TP4054::getStatus(){
 	// check if we're charging, set chrg_out_pin HIGH
 	// and check chrg_in_pin for LOW value
 	pinMode(_chrg_out_pin, OUTPUT);
-	delay(100);
+	delay(10);
 	digitalWrite(_chrg_out_pin, HIGH);
-	delay(100);
+	delay(10);
 	if(digitalRead(_chrg_in_pin) == LOW){
 		// strong pull down -> charging
 		pinMode(_chrg_out_pin, INPUT);
@@ -82,7 +82,7 @@ chargeStatus_t TP4054::getStatus(){
 	} else if (digitalRead(_chrg_in_pin) == HIGH){
 		// we're in AC or LVCU set to high-Z
 		pinMode(_chrg_out_pin, INPUT);
-		delay(100);
+		delay(10);
 		if (digitalRead(_chrg_in_pin) == LOW) {
 			// weak pull down -> done
 			status = TP4054_AC_PRESENT;

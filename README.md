@@ -9,4 +9,5 @@ It also supports a third pin connected to VBAT via a voltage devider to get a ro
 ## Examples
 todo
 
-# License: MIT see LICENSE.md
+# License
+MIT see LICENSE.md
